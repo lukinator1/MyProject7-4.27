@@ -62,7 +62,7 @@ void AEnemy::cancelTakeDamageOverTime(FTimerHandle handle){
 }
 
 
-void AEnemy::Die(){
+void AEnemy::Die_Implementation(){
     this->Destroy();
 }
 

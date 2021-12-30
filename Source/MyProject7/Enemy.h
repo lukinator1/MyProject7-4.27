@@ -38,8 +38,9 @@ public:
     void setStatusEffect(FString statuseffect);
     UFUNCTION(BlueprintCallable, Category="Stats")
     void cancelTakeDamageOverTime(FTimerHandle canceldamagetimerhandle);
-    UFUNCTION(BlueprintCallable, Category="Stats")
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Stats")
     void Die();
+    virtual void Die_Implementation();
     UFUNCTION(BlueprintCallable, Category="Stats")
     void Alert();
     TMap<FString, int> statuseffects;
